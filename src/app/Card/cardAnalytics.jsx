@@ -39,8 +39,8 @@ const CardAnalytics = () => {
 		},
 	];
 	return (
-		<div className="grid grid-cols-2 px-[5vw] mt-16 gap-x-3 mb-20  ">
-			<div className="flex col-span-2 px-4 py-3 mb-4 border rounded-md md:col-span-1 border-gray-500/40 ">
+		<div className="grid grid-cols-2 px-[5vw] mt-14 gap-x-3 gap-y-4">
+			<div className="flex col-span-2 px-4 py-3 border rounded-md md:col-span-1 border-gray-500/40 ">
 				<div className="font-light text-white/80">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quo
 					iste autem officiis perspiciatis, a corrupti beatae eum dolore ut
@@ -73,22 +73,20 @@ const CardAnalytics = () => {
 				<div className="mt-8">
 					{itemList.map((data, index) => {
 						return (
-							<>
-								<div className="flex justify-between">
-									<div className="flex items-center mb-6 gap-x-4">
-										<img
-											src={data.image}
-											alt={data.title}
-											className="object-cover object-center w-12 rounded-full h-fit"
-										/>
-										<div>
-											<h1 className="font-bold ">{data.title}</h1>
-											<p className="text-sm text-white/50">{data.gmail}</p>
-										</div>
+							<div className="flex justify-between">
+								<div className="flex items-center mb-6 gap-x-6">
+									<img
+										src={data.image}
+										alt={data.title}
+										className="object-cover object-center w-12 rounded-full h-fit"
+									/>
+									<div>
+										<h1 className="font-bold ">{data.title}</h1>
+										<p className="text-sm text-white/50">{data.gmail}</p>
 									</div>
-									<div className="font-bold">{data.amount}</div>
 								</div>
-							</>
+								<div className="font-bold">{data.amount}</div>
+							</div>
 						);
 					})}
 				</div>

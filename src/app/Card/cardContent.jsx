@@ -27,7 +27,7 @@ const CardContent = () => {
 		},
 	];
 	return (
-		<div className="flex flex-wrap items-center justify-center gap-4 px-5 mt-12 md:justify-center">
+		<div className="flex flex-wrap items-center justify-center gap-3 px-5 mt-12 md:justify-center">
 			{itemList.map((data, index) => {
 				return (
 					<div
