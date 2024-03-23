@@ -73,7 +73,7 @@ const CardAnalytics = () => {
 				<div className="mt-8">
 					{itemList.map((data, index) => {
 						return (
-							<div className="flex justify-between">
+							<div className="flex justify-between" key={index}>
 								<div className="flex items-center mb-6 gap-x-6">
 									<img
 										src={data.image}
