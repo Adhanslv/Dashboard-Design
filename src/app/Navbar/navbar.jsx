@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
 	return (
-		<nav className="flex justify-between px-[4vw] py-4 border-b border-white/15">
+		<nav className="flex justify-between px-[4vw] py-4 border-b border-black/15">
 			<ul className="flex justify-between gap-2 ">
 				<li className="px-3.5 py-2 font-semibold cursor-pointer">
 					<a href="/">Home</a>

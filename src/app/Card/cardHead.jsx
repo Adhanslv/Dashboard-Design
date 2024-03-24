@@ -1,4 +1,7 @@
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import React from "react";
+import CardContent from "./cardContent";
+import CardAnalytics from "./cardAnalytics";
 
 const CardHead = () => {
 	return (
@@ -9,23 +12,43 @@ const CardHead = () => {
 					<div className="px-2.5 py-2 border border-gray-500/40 rounded-md whitespace-nowrap">
 						Jan 20,2024 - Mar 09,2024
 					</div>
-					<button className="px-2.5 py-2 font-bold text-black bg-white rounded-md">
+					<button className="px-2.5 py-2 font-bold text-white bg-black rounded-md">
 						Download
 					</button>
 				</div>
 			</div>
-			<div className="flex items-center px-4 py-1 rounded-xl gap-1 bg-gray-500/30 w-fit text-[13px] cursor-pointer mt-4 whitespace-nowrap overflow-x-hidden ">
-				<h1 className="px-4 py-2.5 bg-black rounded-full">Overview</h1>
-				<h1 className="px-4 py-2.5 text-white rounded-full hover:bg-black/30">
-					Analytics
-				</h1>
-				<h1 className="px-4 py-2.5 text-white rounded-full hover:bg-black/30">
-					Reports
-				</h1>
-				<h1 className="px-4 py-2.5 text-white rounded-full hover:bg-black/30">
-					Notifications
-				</h1>
-			</div>
+			<Tabs defaultValue="Overview" className="mt-12 ">
+				<TabsList className="px-2 py-6 bg-black rounded-sm">
+					<TabsTrigger
+						className="text-white rounded-full hover:rounded-full hover:bg-white/35"
+						value="Overview"
+					>
+						Overview
+					</TabsTrigger>
+					<TabsTrigger
+						className="text-white rounded-full hover:rounded-full hover:bg-white/35"
+						value="Analytics"
+					>
+						Analytics
+					</TabsTrigger>
+					<TabsTrigger
+						className="text-white rounded-full hover:rounded-full hover:bg-white/35"
+						value="Reports"
+					>
+						Reports
+					</TabsTrigger>
+					<TabsTrigger
+						className="text-white rounded-full hover:rounded-full hover:bg-white/35"
+						value="Notification"
+					>
+						Notification
+					</TabsTrigger>
+				</TabsList>
+				<TabsContent value="Overview">
+					<CardContent />
+					<CardAnalytics />
+				</TabsContent>
+			</Tabs>
 		</div>
 	);
 };

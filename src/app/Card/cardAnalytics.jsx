@@ -39,9 +39,9 @@ const CardAnalytics = () => {
 		},
 	];
 	return (
-		<div className="grid grid-cols-2 px-[5vw] mt-14 gap-x-3 gap-y-4">
+		<div className="grid grid-cols-2 mt-14 gap-x-3 gap-y-4">
 			<div className="flex col-span-2 px-4 py-3 border rounded-md md:col-span-1 border-gray-500/40 ">
-				<div className="font-light text-white/80">
+				<div className="font-light ">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quo
 					iste autem officiis perspiciatis, a corrupti beatae eum dolore ut
 					rerum qui omnis molestias ipsum ab consequatur similique dolorem
@@ -82,10 +82,10 @@ const CardAnalytics = () => {
 									/>
 									<div>
 										<h1 className="font-bold ">{data.title}</h1>
-										<p className="text-sm text-white/50">{data.gmail}</p>
+										<p className="text-sm text">{data.gmail}</p>
 									</div>
 								</div>
-								<div className="font-bold">{data.amount}</div>
+								<div className="font-bold ">{data.amount}</div>
 							</div>
 						);
 					})}

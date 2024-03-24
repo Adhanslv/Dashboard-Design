@@ -27,11 +27,11 @@ const CardContent = () => {
 		},
 	];
 	return (
-		<div className="flex flex-wrap items-center justify-center gap-3 px-5 mt-12 md:justify-center">
+		<div className="flex flex-wrap justify-center gap-3 mt-12 ">
 			{itemList.map((data, index) => {
 				return (
 					<div
-						className="w-[335px]  px-4 py-3 border rounded-md border-gray-500/40"
+						className="w-[335px]  px-4 py-3 border rounded-md border-gray-500/40 lg:w-[330px] md:w-[340px]  "
 						key={index}
 					>
 						<div className="flex items-center justify-between mb-2 ">
@@ -39,7 +39,7 @@ const CardContent = () => {
 							<span className="text-[22px]">{data.tag}</span>
 						</div>
 						<p className="text-[26px] font-semibold">{data.amount}</p>
-						<p className="text-white/60 text-[13px] ">{data.desc}</p>
+						<p className=" text-[13px] ">{data.desc}</p>
 					</div>
 				);
 			})}
