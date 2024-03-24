@@ -1,12 +1,11 @@
-// import CardAnalytics from "./Card/cardAnalytics";
-import CardContent from "./Card/cardContent";
-import CardHead from "./Card/cardHead";
+import CardHead from "@/components/Card/cardHead";
+import TabContentData from "@/components/TabsContent/tabs";
 
 export default function Home() {
 	return (
 		<div>
 			<CardHead />
-			{/* <CardAnalytics /> */}
+			<TabContentData />
 		</div>
 	);
 }
