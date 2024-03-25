@@ -67,6 +67,7 @@ const CardOrders = () => {
 						<div
 							className="flex items-center border shadow-md border-black rounded-sm px-3 py-2.5 col-span-2 
             lg:col-span-1 md:col-span-1"
+							key={index}
 						>
 							<div className="">
 								<h1 className="mb-3 text-2xl font-semibold whitespace-pre-wrap ">
