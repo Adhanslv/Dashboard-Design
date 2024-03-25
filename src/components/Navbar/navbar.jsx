@@ -5,8 +5,8 @@ import Navlink from "./navlink";
 
 const Navbar = () => {
 	return (
-		<nav className="flex justify-between px-[4vw] py-2  shadow-sm md:px-[4vw] gap-x-3">
-			<ul className="flex items-center justify-between gap-7 ">
+		<nav className="flex justify-between px-[4vw] py-2  shadow-sm md:px-[2vw] gap-x-3">
+			<ul className="flex items-center justify-between gap-5 ">
 				<li className=" text-[34px]">
 					<a href="">📦</a>
 				</li>
