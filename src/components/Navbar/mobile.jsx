@@ -28,19 +28,19 @@ const NavbarMobile = () => {
 					<div className="grid items-center grid-cols-4 gap-4 text-black">
 						<ul className="flex flex-col gap-4 mt-4">
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								Dashboard
+								<a href="/">Dashboard</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								Orders
+								<a href="/Orders">Orders</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								Products
+								<a href="/Products">Products</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								Costumers
+								<a href="/">Costumers</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								Analytics
+								<a href="/">Analytics</a>
 							</li>
 						</ul>
 					</div>
