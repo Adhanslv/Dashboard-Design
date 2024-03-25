@@ -65,7 +65,7 @@ const TableContent = () => {
 				<TableCaption>A list of your recent invoices.</TableCaption>
 				<TableHeader>
 					<TableRow>
-						<TableHead className="font-bold text-black uppercase ">
+						<TableHead className="w-[80px] font-bold text-black uppercase ">
 							Invoice
 						</TableHead>
 						<TableHead className="font-bold text-black uppercase">

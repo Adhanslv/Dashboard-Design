@@ -11,7 +11,7 @@ const CardAnalytics = () => {
 		},
 		{
 			image:
-				"https://i.pinimg.com/564x/86/21/ef/8621ef868f0a95051e8d41cb5b4258ef.jpg",
+				"https://i.pinimg.com/564x/12/ec/91/12ec910af9cd15f6c79360fdc8f0e988.jpg",
 			title: "Budi Hartono",
 			gmail: "budihartono@gmail.com",
 			amount: "+$2,999.00",
@@ -47,7 +47,7 @@ const CardAnalytics = () => {
 	];
 	return (
 		<div className="grid grid-cols-2 mt-14 gap-x-3 gap-y-4">
-			<div className="flex col-span-2 px-4 py-3 border rounded-md md:col-span-1 border-gray-500/40 ">
+			<div className="flex col-span-2 px-4 py-3 border border-black rounded-md md:col-span-1 ">
 				<div className="font-light ">
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quo
 					iste autem officiis perspiciatis, a corrupti beatae eum dolore ut
@@ -74,14 +74,17 @@ const CardAnalytics = () => {
 					ipsum fuga explicabo nostrum!
 				</div>
 			</div>
-			<div className="col-span-2 px-4 py-3 border rounded-md md:col-span-1 border-gray-500/40">
+			<div className="col-span-2 px-4 py-3 border border-black rounded-md md:col-span-1">
 				<h1>Recent Sales</h1>
 				<p>You made 265 sales this month.</p>
 				<div className="mt-8">
 					{itemList.map((data, index) => {
 						return (
-							<div className="flex justify-between" key={index}>
-								<div className="flex items-center mb-6 gap-x-6">
+							<div
+								className="flex justify-between text-[13px]  lg:text-[16px]"
+								key={index}
+							>
+								<div className="flex items-center mb-6 gap-x-2">
 									<img
 										src={data.image}
 										alt={data.title}

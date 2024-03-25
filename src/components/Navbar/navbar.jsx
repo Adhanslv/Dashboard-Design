@@ -1,22 +1,23 @@
 import React from "react";
 import NavbarMobile from "./mobile";
 import { IoMdSearch } from "react-icons/io";
+import Navlink from "./navlink";
 
 const Navbar = () => {
 	return (
 		<nav className="flex justify-between px-[4vw] py-2  shadow-sm md:px-[4vw] gap-x-3">
 			<ul className="flex items-center justify-between gap-7 ">
 				<li className=" text-[34px]">
-					<a href="/">📦</a>
+					<a href="">📦</a>
 				</li>
-				<li className="hidden font-semibold cursor-pointer ">
+				<li className="hidden font-semibold cursor-pointer md:block">
 					<a href="/">Dashboard</a>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
 					<a href="/Orders">Orders</a>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
-					<a href="/">Products</a>
+					<a href="/Products">Products</a>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
 					<a href="/">Costumers</a>
@@ -25,12 +26,12 @@ const Navbar = () => {
 					<a href="/">Analytics</a>
 				</li>
 			</ul>
-			<div className="flex items-center justify-between gap-2 cursor-pointer ">
+			<div className="flex items-center justify-between gap-4 cursor-pointer lg:gap-2 ">
 				<di className="relative flex items-center px-3 py-1 border rounded-sm border-black/15 ">
 					<IoMdSearch size={22} />
 					<input
 						type="text"
-						className="px-3 py-1 outline-none"
+						className="w-full px-3 py-1 outline-none"
 						placeholder="Search...."
 					/>
 				</di>

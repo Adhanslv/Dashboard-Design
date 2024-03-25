@@ -6,31 +6,19 @@ import TableContent from "../Table/table";
 
 const TabContentData = () => {
 	return (
-		<Tabs defaultValue="Overview" className=" px-[5vw] overflow-hidden ">
-			<TabsList className="flex w-full px-2 py-6 bg-black rounded-sm b gap-x-1 lg:w-fit md:w-fit ">
+		<Tabs defaultValue="Overview" className="mt-10">
+			<TabsList className="gap-1 px-2 bg-black whitespace-nowrap ">
 				<TabsTrigger
-					className="text-white rounded-full hover:rounded-full hover:bg-white/35"
+					className="text-white rounded-full hover:bg-white/30 hover:text-white"
 					value="Overview"
 				>
 					Overview
 				</TabsTrigger>
 				<TabsTrigger
-					className="text-white rounded-full hover:rounded-full hover:bg-white/35"
+					className="text-white rounded-full hover:bg-white/30 hover:text-white"
 					value="Analytics"
 				>
-					Analytics
-				</TabsTrigger>
-				<TabsTrigger
-					className="text-white rounded-full hover:rounded-full hover:bg-white/35"
-					value="Reports"
-				>
 					Reports
-				</TabsTrigger>
-				<TabsTrigger
-					className="text-white rounded-full hover:rounded-full hover:bg-white/35"
-					value="Notification"
-				>
-					Notification
 				</TabsTrigger>
 			</TabsList>
 			<TabsContent value="Overview">
@@ -38,12 +26,6 @@ const TabContentData = () => {
 				<CardAnalytics />
 			</TabsContent>
 			<TabsContent value="Analytics">
-				<TableContent />
-			</TabsContent>
-			<TabsContent value="Reports">
-				<TableContent />
-			</TabsContent>
-			<TabsContent value="Notification">
 				<TableContent />
 			</TabsContent>
 		</Tabs>
