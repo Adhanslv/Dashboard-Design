@@ -7,7 +7,7 @@ const CardOrders = () => {
 		<div className="grid grid-cols-3 mt-10 gap-x-2 gap-y-2 md:gap-x-2">
 			{DataOrders.map((data, index) => {
 				return (
-					<div className="flex flex-col col-span-3 md:col-span-1 ">
+					<div className="flex flex-col col-span-3 md:col-span-1" key={index}>
 						<div className="border border-black rounded-t-sm">
 							<img
 								src={data.image}
