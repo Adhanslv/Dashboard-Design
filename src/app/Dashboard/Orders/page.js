@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { DataOrders } from "@/utils/dataOrder";
 import { Button } from "@/components/ui/button";
-
 export const metadata = {
 	title: "Orders",
 };
@@ -26,11 +25,11 @@ const OrdersPage = () => {
 							</div>
 							<div className="flex items-center border shadow-md border-black rounded-b-sm px-5 py-2.5 b">
 								<div className="">
-									<h1 className="mt-2 text-2xl font-semibold uppercase">
+									<h1 className="mt-2 text-2xl font-bold uppercase">
 										{data.article}
 									</h1>
 									<p className="mt-4 text-xl font-semibold">{data.user}</p>
-									<p className="">{data.gmail}</p>
+									<p className="text-[17px] font-light">{data.gmail}</p>
 									<p className="text-[19px] font-semibold">
 										{" "}
 										<span className="text-xl ">x</span> {data.qty}
@@ -43,10 +42,10 @@ const OrdersPage = () => {
 										className="flex gap-x-1"
 									>
 										<Button className=" rounded-md text-[15px] mb-2    ">
-											See Detail
+											Detail Order
 										</Button>
 										<Button className=" rounded-md text-[15px] mb-2 bg-gray-500/85 hover:bg-gray-400   ">
-											Confirm
+											Confirm Order
 										</Button>
 									</Link>
 								</div>

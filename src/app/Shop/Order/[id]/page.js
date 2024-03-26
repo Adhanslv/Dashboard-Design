@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { DataOrders } from "@/utils/dataOrder";
 import { useParams } from "next/navigation";
-import { IoChevronBackCircle } from "react-icons/io5";
+import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 const DetailOrder = () => {
 	const { id } = useParams();
@@ -11,9 +11,10 @@ const DetailOrder = () => {
 	return (
 		<div className="px-[5vw] mt-10 ">
 			<Link href={"/Dashboard/Orders"} className="flex items-center gap-x-1">
-				<IoChevronBackCircle size={30} />
-				<span className="text-[22px] font-semibold transition hover:translate-x-2 duration-300 ease-in">
-					back
+				<IoArrowBackCircleOutline size={30} />
+
+				<span className="text-[22px] font-bold transition hover:translate-x-2 duration-300 ease-in">
+					Back
 				</span>
 			</Link>
 			<div className="flex flex-col max-w-full px-3 py-2 mt-12 border border-black rounded-md md:max-w-fit md:block">
