@@ -31,10 +31,10 @@ const NavbarMobile = () => {
 								<a href="/">Dashboard</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								<a href="/Orders">Orders</a>
+								<a href="/Dashboard/Orders">Orders</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
-								<a href="/Products">Products</a>
+								<a href="/Dashboard/Products">Products</a>
 							</li>
 							<li className="transition duration-300 ease-in-out hover:translate-x-2">
 								<a href="/">Costumers</a>

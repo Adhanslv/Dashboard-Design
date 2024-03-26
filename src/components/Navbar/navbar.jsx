@@ -1,33 +1,33 @@
 import React from "react";
 import NavbarMobile from "./mobile";
 import { IoMdSearch } from "react-icons/io";
-import Navlink from "./navlink";
+import Link from "next/link";
 
 const Navbar = () => {
 	return (
 		<nav className="flex justify-between px-[4vw] py-2  shadow-sm md:px-[2vw] gap-x-3">
 			<ul className="flex items-center justify-between gap-5 ">
 				<li className=" text-[34px]">
-					<a href="">📦</a>
+					<Link href="">📦</Link>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
-					<a href="/">Dashboard</a>
+					<Link href="/">Dashboard</Link>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
-					<a href="/Orders">Orders</a>
+					<Link href="/Dashboard/Orders">Orders</Link>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
-					<a href="/Products">Products</a>
+					<Link href="/Dashboard/Products">Products</Link>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
-					<a href="/">Costumers</a>
+					<Link href="/">Costumers</Link>
 				</li>
 				<li className="hidden font-semibold cursor-pointer md:block">
-					<a href="/">Analytics</a>
+					<Link href="/">Analytics</Link>
 				</li>
 			</ul>
 			<div className="flex items-center justify-between gap-4 cursor-pointer lg:gap-2 ">
-				<di className="relative flex items-center px-3 py-1 border rounded-sm border-black/15 ">
+				<di className="relative flex items-center px-3 py-1 border rounded-sm border-black/45 ">
 					<IoMdSearch size={22} />
 					<input
 						type="text"

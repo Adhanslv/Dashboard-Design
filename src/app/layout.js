@@ -17,6 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
+			<link
+				rel="icon"
+				href="https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png"
+			></link>
 			<body className={poppins.className}>
 				<Navbar />
 				{children}

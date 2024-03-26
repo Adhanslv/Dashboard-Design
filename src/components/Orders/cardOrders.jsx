@@ -7,7 +7,7 @@ const CardOrders = () => {
 		<div className="grid grid-cols-3 mt-10 gap-x-2 gap-y-2 md:gap-x-2">
 			{DataOrders.map((data, index) => {
 				return (
-					<div className="flex flex-col col-span-3 md:col-span-1" key={index}>
+					<div className="flex flex-col col-span-3 md:col-span-1 " key={index}>
 						<div className="border border-black rounded-t-sm">
 							<img
 								src={data.image}
@@ -25,7 +25,7 @@ const CardOrders = () => {
 								<p className="text-[17px]">Total Barang : {data.qty}</p>
 								<p className="text-[17px] mb-3">Total Harga : {data.amount}</p>
 								<Button className="px-3 py-2 rounded-md text-[15px] mb-2 ">
-									<a href="/Orders/[id]">See Detail</a>
+									<a href="/(shop)/">See Detail</a>
 								</Button>
 							</div>
 						</div>
