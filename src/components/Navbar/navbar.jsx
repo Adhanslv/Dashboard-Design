@@ -60,7 +60,9 @@ const Navbar = () => {
 						</DropdownMenuLabel>
 						<DropdownMenuGroup>
 							<DropdownMenuItem className="cursor-pointer">
-								<span>Profile</span>
+								<Link href={"/Dashboard/Profile"}>
+									<span>Profile</span>
+								</Link>
 							</DropdownMenuItem>
 							<DropdownMenuItem className="cursor-pointer">
 								<span>Logout</span>

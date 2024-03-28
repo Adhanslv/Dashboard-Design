@@ -32,11 +32,21 @@ const DetailOrder = () => {
 					<p className="font-semibold ">Total : {item?.amount}</p>
 					<p className="mt-2 mb-3 text-justify ">{item.desc}</p>
 					<Button
-						onCl={() => {
+						variant="default"
+						onClick={() => {
 							toast({
 								title: "Approved",
 								description: "Success Approved Ordered",
-								action: <ToastAction altText="Back">Back To Home</ToastAction>,
+								action: (
+									<Link href={"/"} className="flex">
+										<ToastAction
+											className="text-white bg-black hover:bg-black/70 hover:text-white"
+											altText="Back"
+										>
+											Back To Home
+										</ToastAction>
+									</Link>
+								),
 							});
 						}}
 					>

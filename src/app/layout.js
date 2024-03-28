@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar/navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const poppins = Poppins({
 	subsets: ["latin"],
@@ -20,9 +21,10 @@ export default function RootLayout({ children }) {
 			<link
 				rel="icon"
 				href="https://logos-world.net/wp-content/uploads/2023/12/F1-Logo.png"
-			></link>
+			/>
 			<body className={poppins.className}>
 				<Navbar />
+				<Toaster />
 				{children}
 				<Footer />
 			</body>
