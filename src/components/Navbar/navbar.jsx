@@ -2,6 +2,15 @@ import React from "react";
 import NavbarMobile from "./mobile";
 import { IoMdSearch } from "react-icons/io";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuGroup,
+	DropdownMenuItem,
+	DropdownMenuLabel,
+	DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 
 const Navbar = () => {
 	return (
@@ -35,11 +44,30 @@ const Navbar = () => {
 						placeholder="Search...."
 					/>
 				</di>
-				<img
-					src="https://i.pinimg.com/736x/43/de/a3/43dea3f49fe615d209db80ca3b1b6f98.jpg"
-					alt="ini fotonya"
-					className="hidden object-cover object-center w-12 rounded-full h-fit lg:block md:block"
-				/>
+				<DropdownMenu>
+					<DropdownMenuTrigger asChild>
+						<Button variant="outline" className="p-0 border-none outline-none ">
+							<img
+								src="https://i.pinimg.com/736x/43/de/a3/43dea3f49fe615d209db80ca3b1b6f98.jpg"
+								alt="ini fotonya"
+								className="hidden object-cover object-center w-12 rounded-full h-fit lg:block md:block"
+							/>
+						</Button>
+					</DropdownMenuTrigger>
+					<DropdownMenuContent className="mr-6 border cursor-pointer border-black/20 ">
+						<DropdownMenuLabel className="cursor-not-allowed">
+							Actions
+						</DropdownMenuLabel>
+						<DropdownMenuGroup>
+							<DropdownMenuItem className="cursor-pointer">
+								<span>Profile</span>
+							</DropdownMenuItem>
+							<DropdownMenuItem className="cursor-pointer">
+								<span>Logout</span>
+							</DropdownMenuItem>
+						</DropdownMenuGroup>
+					</DropdownMenuContent>
+				</DropdownMenu>
 				<NavbarMobile />
 			</div>
 		</nav>

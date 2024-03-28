@@ -8,6 +8,8 @@ export const DataOrders = [
 		gmail: "asyhab2002@gmail.com",
 		qty: "2",
 		amount: "$2000",
+		addres: "3906 K Street 19104 West Philadelphia Mantua",
+		desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officia illo asperiores dignissimos! Nulla doloribus tempora ducimus! Eum iure pariatur incidunt illum similique assumenda odit est culpa, saepe odio itaque obcaecati! Esse earum cupiditate eligendi consectetur? Labore odio rem praesentium ullam accusamus ratione incidunt odit veritatis. Molestiae quidem architecto sed.",
 	},
 	{
 		id: 2,
@@ -18,6 +20,8 @@ export const DataOrders = [
 		gmail: "brenfaiyaz@gmail.com",
 		qty: "4",
 		amount: "$12000",
+		addres: "3906 K Street 19104 West Philadelphia Mantua",
+		desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officia illo asperiores dignissimos! Nulla doloribus tempora ducimus! Eum iure pariatur incidunt illum similique assumenda odit est culpa, saepe odio itaque obcaecati! Esse earum cupiditate eligendi consectetur? Labore odio rem praesentium ullam accusamus ratione incidunt odit veritatis. Molestiae quidem architecto sed.",
 	},
 	{
 		id: 3,
@@ -28,16 +32,20 @@ export const DataOrders = [
 		gmail: "asaprocky@gmail.com",
 		qty: "10",
 		amount: "$20000",
+		addres: "3906 K Street 19104 West Philadelphia Mantua",
+		desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officia illo asperiores dignissimos! Nulla doloribus tempora ducimus! Eum iure pariatur incidunt illum similique assumenda odit est culpa, saepe odio itaque obcaecati! Esse earum cupiditate eligendi consectetur? Labore odio rem praesentium ullam accusamus ratione incidunt odit veritatis. Molestiae quidem architecto sed.",
 	},
 	{
 		id: 4,
 		image:
-			"https://img.vitkac.com/uploads/product_thumb/CZAPKA%207915N22C3%200-V0037/lg/1.png",
+			"https://superstellar.eu/cdn/shop/files/6269324380-2016603194556-1.png?v=1705890106",
 		article: "Stone Island Bucket Hat",
 		user: "Tyler The Creator",
 		gmail: "wordfang@gmail.com",
 		qty: "4",
 		amount: "$5000",
+		addres: "3906 K Street 19104 West Philadelphia Mantua",
+		desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officia illo asperiores dignissimos! Nulla doloribus tempora ducimus! Eum iure pariatur incidunt illum similique assumenda odit est culpa, saepe odio itaque obcaecati! Esse earum cupiditate eligendi consectetur? Labore odio rem praesentium ullam accusamus ratione incidunt odit veritatis. Molestiae quidem architecto sed.",
 	},
 	{
 		id: 5,
@@ -48,15 +56,19 @@ export const DataOrders = [
 		gmail: "spikegeil@gmail.com",
 		qty: "1",
 		amount: "$2000",
+		addres: "3906 K Street 19104 West Philadelphia Mantua",
+		desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officia illo asperiores dignissimos! Nulla doloribus tempora ducimus! Eum iure pariatur incidunt illum similique assumenda odit est culpa, saepe odio itaque obcaecati! Esse earum cupiditate eligendi consectetur? Labore odio rem praesentium ullam accusamus ratione incidunt odit veritatis. Molestiae quidem architecto sed.",
 	},
 	{
 		id: 6,
 		image:
 			"https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/13/229cd570-a2ca-45e2-b574-c6e37097de18.jpg",
 		article: "99 CLover X Morteils",
-		user: "Asyhab Ramadhan",
-		gmail: "asyhab2002@gmail.com",
+		user: "Bang Toyib",
+		gmail: "toyibah@gmail.com",
+		addres: "3906 K Street 19104 West Philadelphia Mantua",
 		qty: "5",
 		amount: "$22000",
+		desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima officia illo asperiores dignissimos! Nulla doloribus tempora ducimus! Eum iure pariatur incidunt illum similique assumenda odit est culpa, saepe odio itaque obcaecati! Esse earum cupiditate eligendi consectetur? Labore odio rem praesentium ullam accusamus ratione incidunt odit veritatis. Molestiae quidem architecto sed.",
 	},
 ];

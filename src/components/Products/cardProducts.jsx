@@ -3,16 +3,13 @@ import { productData } from "@/utils/productData";
 import {
 	Table,
 	TableBody,
-	TableCaption,
 	TableCell,
-	TableFooter,
 	TableHead,
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { FaPencil } from "react-icons/fa6";
-
 const ProductContent = () => {
 	return (
 		<div className="mt-10">

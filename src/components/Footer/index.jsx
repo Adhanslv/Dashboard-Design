@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
 	return (
-		<div className="flex flex-col items-center justify-center mt-12 mb-12">
+		<div className="flex flex-col items-center justify-center mt-12 mb-4">
 			<div>
 				Created by{" "}
 				<span className="text-gray-500 underline cursor-pointer ">

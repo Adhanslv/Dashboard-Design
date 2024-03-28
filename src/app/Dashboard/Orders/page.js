@@ -44,9 +44,6 @@ const OrdersPage = () => {
 										<Button className=" rounded-md text-[15px] mb-2    ">
 											Detail Order
 										</Button>
-										<Button className=" rounded-md text-[15px] mb-2 bg-gray-500/85 hover:bg-gray-400   ">
-											Confirm Order
-										</Button>
 									</Link>
 								</div>
 							</div>
